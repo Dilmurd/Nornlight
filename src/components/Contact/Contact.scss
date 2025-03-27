@@ -1,0 +1,45 @@
+.contact{
+    margin-top: 102px;
+    .contact__top{
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        svg{
+            font-size: 10px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: manrope;
+            color: #454545;
+            &:active{
+                color: #000;
+            }
+        }
+    }
+    .contact__item{
+        display: flex;
+        justify-content: space-between;
+        h2{
+            font-size: 64px;
+            font-weight: 700;
+            font-family: manrope;
+            color: #454545;
+        }
+        h3{
+            font-size: 24px;
+            font-weight: 600;
+            font-family: manrope;
+            color: #454545;
+            margin-bottom: 10px;
+        }
+        h4{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: manrope;
+            color: #454545;
+            max-width: 209px;
+        }
+    }
+}

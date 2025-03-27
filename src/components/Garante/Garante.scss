@@ -1,0 +1,62 @@
+.garant{
+    margin-top: 102px;
+    .garant__top{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-bottom: 15px;
+        svg{
+            font-size: 10px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: manrope;
+            color: #454545;
+            &:active{
+                color: #000;
+            }
+        }
+    }
+    .garant__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        h2{
+            font-size: 64px;
+            font-weight: 700;
+            font-family: manrope;
+            color: #454545;
+        }
+        .garant__right{
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+            h3{
+                font-size: 24px;
+                font-weight: 600;
+                font-family: manrope;
+            }
+            .garant__texts{
+                .garant__title{
+                    font-size: 20px;
+                    font-weight: 400;
+                    font-family: manrope;
+                }
+                .garant__li{
+                    li{
+                        list-style: disc;
+                        font-size: 20px;
+                        font-weight: 400;
+                        font-family: manrope;
+                        max-width: 640px;
+                    }
+                }
+                .garant__subtitle{
+                    font-size: 20px;
+                    font-weight: 400;
+                    font-family: manrope;
+                }
+            }
+        }
+    }
+}

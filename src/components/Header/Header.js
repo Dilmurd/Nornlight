@@ -32,7 +32,7 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link href={"/garranty"}>
+                <Link href={"/garant"}>
                   <span>Гарантии</span>
                 </Link>
               </li>
