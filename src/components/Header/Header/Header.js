@@ -7,6 +7,7 @@ import { FaSearch } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { TbAntennaBars5 } from "react-icons/tb";
 import { FiShoppingCart } from "react-icons/fi";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -16,34 +17,34 @@ function Header() {
           <div className="navbar__top">
             <ul className="navbar__collection">
               <li>
-                <a href="/about">
+                <Link href={"/about"}>
                   <span>О компании</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link href={"/delivery"}>
                   <span>Доставка и оплата</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link href={"/return"}>
                   <span>Возврат</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link href={"/garranty"}>
                   <span>Гарантии</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link href={"/contacts"}>
                   <span>Контакты</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link href={"/blog"}>
                   <span>Блог</span>
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="navbar__contacts">
@@ -54,9 +55,9 @@ function Header() {
           <div className="navbar__bottom">
             <div className="navbar__logo">
               <Image src={navbar} alt="" />
-              <a href="/">
+              <Link href={"/"}>
               <p className="navbar__title">NORNLIGHT</p>
-              </a>
+              </Link>
               <div className="navbar__cat">
                 <button><GiHamburgerMenu/> Каталог</button>
               </div>

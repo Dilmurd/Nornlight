@@ -1,6 +1,7 @@
 import React from "react";
 import "./Companyy.scss";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from "next/link";
 
 function Companyy() {
   return (
@@ -8,13 +9,17 @@ function Companyy() {
       <section className="com">
         <div className="container">
           <div className="com__top">
-            <a href="/" className="com__word">
+            <Link href={"/"}>
+            <p className="com__word">
               Главная
-            </a>
+            </p>
+            </Link>
             <IoIosArrowForward />
-            <a href="/about" className="com__word">
+            <Link href={"/about"}>
+            <p className="com__word">
               О компании
-            </a>
+            </p>
+            </Link>
           </div>
           <div className="com__wrapper">
             <div className="com__left">
