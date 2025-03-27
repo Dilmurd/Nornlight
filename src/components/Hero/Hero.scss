@@ -1,0 +1,29 @@
+.hero{
+    margin-top: 81px;
+    .hero__wrapper{
+        display: flex;
+        background-color: #F2F2F2;
+        justify-content: space-between;
+        padding: 0 267px 0 267px;
+        border-radius: 50px;
+        align-items: center;
+        height: 500px;
+        .hero__text{
+            p{
+                font-size: 55px;
+                font-weight: 700;
+                font-family: manrope;
+                color: #454545;
+                max-width: 615px;
+            }
+            button{
+                border-radius: 100px;
+                padding: 10px 20px;
+                font-size: 55px;
+                border: none;
+                background-color: #454545;
+                color: #ffff;
+            }
+        }
+    }
+}

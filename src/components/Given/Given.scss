@@ -1,0 +1,20 @@
+.given{
+    margin-top: 71px;
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        font-family: manrope;
+        color: #454545;
+        margin-bottom: 72px;
+    }
+    .given__wrapper{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+        .given__item{
+            border: 1px solid #D9D9D9;
+            width: 310px;
+            padding: 20px 21px;
+        }
+    }
+}

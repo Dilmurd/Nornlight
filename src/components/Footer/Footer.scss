@@ -1,0 +1,78 @@
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 79px 0;
+    .footer__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width:1000px) {
+            flex-direction: column;
+            gap: 40px;
+        }
+        .footer__logo{
+            div{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 45px;
+                @media (max-width:1000px) {
+                    margin-bottom: 0;
+                }
+                p{
+                    font-size: 40px;
+                    font-weight: 500;
+                    font-family: int;
+                    color: #454545;
+                }
+            }
+            .phone{
+                font-size: 24px;
+                font-weight: 600;
+                font-family: int;
+                color: #454545;
+                margin-bottom: 35px;
+            }
+            .desc{
+                font-size: 16px;
+                font-weight: 600;
+                color: #454545;
+                margin-top: 35px;
+                margin-bottom: 30px;
+            }
+            div{
+                button{
+                    padding: 7px 8px;
+                    border-radius: 150px;
+                    border: 1px solid #454545;
+                    color: #454545;
+                    @media (max-width:1000px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .footer__links{
+            .footer__title{
+                font-size: 24px;
+                margin-bottom: 32px;
+                font-weight: 700;
+                color: #454545;
+            }
+            .footer__collection{
+                display: flex;
+                flex-direction: column;
+                gap: 29px;
+                font-size: 16px;
+                font-weight: 600;   
+                span{
+                    color: #454545;
+                    &:hover{
+                        color: rgb(226, 145, 159);
+                    }
+                }
+            }
+        }
+    }
+}

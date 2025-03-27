@@ -1,0 +1,100 @@
+.products{
+    .products__top{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 71px;
+        margin-bottom: 89px;
+        align-items: center;
+        h1{
+            font-size: 40px;
+            font-weight: 700;
+            color: #454545;
+            font-family: manrope;
+        }
+        button{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 14px 47px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #454545;
+            border-radius: 100px;
+            border: 1px solid #454545;
+            background-color: #fff;
+            transition: .5s;
+            &:hover{
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+    .products__wrapper{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        .products__item{
+            position: relative;
+            width: 326px;
+            .products__img{
+                padding: 11px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 32px;
+            }
+            .products__icon{
+                position: absolute;
+                top: 11;
+                right: 11;
+                svg{
+                    font-size: 24px;
+                }
+            }
+            .products__title{
+                margin-bottom: 24px;
+                max-width: 227px;
+                font-size: 20px;
+                font-weight: 500;
+                font-family: manrope;
+                color: #454545;
+                margin-left: 27px;
+            }
+            .products__price{
+                margin-left: 27px;
+                padding: 0 0 29px;
+                del{
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: manrope;
+                    color: #9F9F9F;
+                    margin-bottom: 6px;
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 700;
+                    font-family: manrope;
+                    color: #454545;
+                }
+            }
+            .pro__icon{
+                position: absolute;
+                right: 16;
+                bottom: 29;
+                button{
+                    font-size: 20px;
+                    padding: 9px 20px;
+                    border-radius: 100px;
+                    border: none;
+                    background-color: #454545;
+                    color: #ffff;
+                    display: flex;
+                    align-items: center;
+                    &:hover{
+                        background-color: #fff;
+                        color: #000;
+                        border: 1px solid #333;
+                    }
+                }
+            }
+        }
+    }
+}

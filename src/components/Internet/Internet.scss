@@ -1,0 +1,28 @@
+.net{
+    margin-top: 100px;
+    .net__wrapper{
+        display: flex;
+        justify-content: space-between;
+        .net__left{
+            p{
+                font-size: 40px;
+                font-weight: 700;
+                font-family: manrope;
+                color: #454545;
+                max-width: 330px;
+            }
+        }
+        .net__right{
+            max-width: 640px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .p__one{
+                font-size: 20px;
+                font-weight: 500;
+                font-family: manrope;
+                color: #454545;
+            }
+        }
+    }
+}

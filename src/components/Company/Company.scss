@@ -1,0 +1,67 @@
+.company{
+    .company__top{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        p{
+            font-size: 40px;
+            font-weight: 700;
+            font-family: manrope;
+            color: #454545;
+        }
+        button{
+            padding: 14px 47px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-radius: 100px;
+            border: 1px solid #454545;
+            color: #454545;
+            font-size: 16px;
+            font-weight: 500;
+            background-color: #fff;
+            transition: .5s;
+            &:hover{
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+    .company__wrapper{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+        .company__card{
+            max-width: 310px;
+            height: 360px;
+            padding: 40px;
+            border: 1px solid #D9D9D9;
+            button{
+                padding: 10px 10px;
+                background-color: #454545;
+                color: #fff;
+                border-radius: 10px;
+                border: none;
+                margin-bottom: 79px;
+                svg{
+                    font-size: 60px;
+                }
+            }
+            .company__title{
+                font-size: 20px;
+                font-weight: 700;
+                font-family: manrope;
+                max-width: 214px;
+                color: #454545;
+                margin-bottom: 20px;
+            }
+            .company__desc{
+                font-size: 16px;
+                font-weight: 400;
+                font-family: manrope;
+                color: #a0a0a0;
+            }
+        }
+    }
+}
