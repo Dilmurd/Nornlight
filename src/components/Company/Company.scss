@@ -9,8 +9,11 @@
             font-weight: 700;
             font-family: manrope;
             color: #454545;
+            @media (max-width:1050px) {
+                margin: 0 auto;
+            }
         }
-        button{
+        .btn{
             padding: 14px 47px;
             display: flex;
             align-items: center;
@@ -22,6 +25,10 @@
             font-weight: 500;
             background-color: #fff;
             transition: .5s;
+            @media (max-width: 1100px) {
+                display: none;
+            }
+           
             &:hover{
                 background-color: #000;
                 color: #fff;
@@ -32,11 +39,24 @@
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-gap: 20px;
+        @media (max-width: 1250px) {
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+            align-items: center;
+        }
+        @media (max-width: 950px) {
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 10px;
+        }
         .company__card{
             max-width: 310px;
             height: 360px;
             padding: 40px;
             border: 1px solid #D9D9D9;
+            @media (max-width: 550px) {
+                height: 233px;
+                padding: 16px;
+            }
             button{
                 padding: 10px 10px;
                 background-color: #454545;
@@ -44,8 +64,15 @@
                 border-radius: 10px;
                 border: none;
                 margin-bottom: 79px;
+                @media (max-width:550px) {
+                    padding: 8px 8px;
+                    margin-bottom: 10px;
+                }
                 svg{
                     font-size: 60px;
+                    @media (max-width: 550px) {
+                        font-size: 24px;
+                    }
                 }
             }
             .company__title{
@@ -55,12 +82,38 @@
                 max-width: 214px;
                 color: #454545;
                 margin-bottom: 20px;
+                @media (max-width:550px) {
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 12px;
+                }
             }
             .company__desc{
                 font-size: 16px;
                 font-weight: 400;
                 font-family: manrope;
                 color: #a0a0a0;
+                @media (max-width:550px) {
+                    font-size: 14px;
+
+                }
+            }
+        }
+        .fat{
+            @media (max-width:550px) {
+                display: flex;
+                justify-content: center;
+            }
+            .about{
+                display: none;
+                @media (max-width:550px) {
+                    display: flex;
+                    justify-content: center;
+                    padding: 14px 102px;
+                    border-radius: 100px;
+                    border: 1px solid #454545;
+                    background-color: #fff;
+                }
             }
         }
     }

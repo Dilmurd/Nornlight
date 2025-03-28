@@ -8,6 +8,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { TbAntennaBars5 } from "react-icons/tb";
 import { FiShoppingCart } from "react-icons/fi";
 import Link from "next/link";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function Header() {
   return (
@@ -54,6 +55,7 @@ function Header() {
           </div>
           <div className="navbar__bottom">
             <div className="navbar__logo">
+              <RxHamburgerMenu/>
               <Image src={navbar} alt="" />
               <Link href={"/"}>
               <p className="navbar__title">NORNLIGHT</p>

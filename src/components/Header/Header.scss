@@ -1,13 +1,22 @@
 .header {
     .navbar {
+      @media (max-width:1100px) {
+        display: none;
+      }
       .navbar__top {
         height: 40px;
         align-items: center;
         display: flex;
         justify-content: space-between;
+        @media (max-width:1100px) {
+
+        }
         .navbar__collection {
           display: flex;
           gap: 27px;
+          @media (max-width: 1100px) {
+            display: none;
+          }
           li {
               span {
                 color: #454545;
@@ -23,10 +32,14 @@
           gap: 24px;
           color: #454545;
           font-family: manrope;
+          @media (max-width: 1100px) {
+            display: none;
+          }
         }
       }
       .navbar__bottom {
         margin-top: 10px;
+
         .navbar__logo {
           display: flex;
           align-items: center;

@@ -1,32 +1,40 @@
-import Image from 'next/image'
 import React from 'react'
-import './Given.scss'
-import tigr from "@/assets/tigr.png"
+import "./Given.scss"
+import brand from "@/assets/tigr.png"
+import Image from 'next/image'
 
-function Given() {
-  return (
-    <main>
-        <section className="given">
-            <div className="container">
-                <h2>Только проверенные бренды</h2>
-                <div className="given__wrapper">
-                    <div className="given__item">
-                        <Image src={tigr} alt=''/>
+function Brand() {
+    return (
+        <main>
+            <section className="brand">
+                <div className="container">
+                    <div className="brand__top">
+                        <p>Только проверенные бренды</p>
                     </div>
-                    <div className="given__item">
-                        <Image src={tigr} alt=''/>
-                    </div>
-                    <div className="given__item">
-                        <Image src={tigr} alt=''/>
-                    </div>
-                    <div className="given__item">
-                        <Image src={tigr} alt=''/>
+                    <div className="brand__wrapper">
+                        <div className="brand__card">
+                            <Image src={brand} alt="" />
+                        </div>
+                        <div className="brand__card">
+                            <Image src={brand} alt="" />
+                        </div>
+                        <div className="brand__card">
+                            <Image src={brand} alt="" />
+                        </div>
+                        <div className="brand__card">
+                            <Image src={brand} alt="" />
+                        </div>
+                        <div className="brand__card">
+                            <Image src={brand} alt="" />
+                        </div>
+                        <div className="brand__card">
+                            <Image src={brand} alt="" />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
   )
 }
 
-export default Given
+export default React.memo(Brand) 

@@ -1,43 +1,49 @@
 import React from 'react'
-import './Blog.scss'
-import { FaLongArrowAltRight } from "react-icons/fa";
-import home from "@/assets/home.png"
-import Image from 'next/image';
-import { GoArrowUpRight } from "react-icons/go";
+import "./Blog.scss"
+import { FaArrowRight } from 'react-icons/fa'
+import hm from "@/assets/home.png"
+import Image from 'next/image'
+
 
 function Blog() {
   return (
     <main>
-        <section className="blog">
+        <section className='blog'>
             <div className="container">
                 <div className="blog__top">
-                    <h2>Блог</h2>
-                    <button>Перейти в блог <FaLongArrowAltRight/></button>
+                    <p className='blog__title'>Блог</p>
+                    <div className='btns'>
+                        <p className='inf'>Перейти в блог</p>
+                        <FaArrowRight/>
+                    </div>
                 </div>
                 <div className="blog__wrapper">
-                    <div className="blog__item">
-                        <Image className='img' src={home} alt=''/>
-                        <div className="blog__text">
-                            <p>Как правильно освещать дом снаружи?</p>
-                            <GoArrowUpRight/>
+                    <div className="blog__card">
+                        <div className='blog__img'>
+                            <Image src={hm} alt="" />
                         </div>
-                        <p className='blog__date'>07.07.2025</p>
+                        <div className='blog__text'>
+                            <p className='blog__inf'>Как правильно освещать дом снаружи?</p>
+                            <p className='blog__data'>01.01.2024</p>
+                        </div>
                     </div>
-                    <div className="blog__item">
-                        <Image className='img' src={home} alt=''/>
-                        <div className="blog__text">
-                            <p>Как правильно освещать дом снаружи?</p>
-                            <GoArrowUpRight/>
+                    <div className="blog__card">
+                        <div className='blog__img'>
+                            <Image src={hm} alt="" />
                         </div>
-                        <p className='blog__date'>07.07.2025</p>
+                        <div className='blog__text'>
+                            <p className='blog__inf'>Как правильно освещать дом снаружи?</p>
+                            <p className='blog__data'>01.01.2024</p>
+                        </div>
                     </div>
-                    <div className="blog__item">
-                        <Image className='img' src={home} alt=''/>
-                        <div className="blog__text">
-                            <p>Как правильно освещать дом снаружи?</p>
-                            <GoArrowUpRight/>
+                    <div className="blog__card">
+                        <div className='blog__img'>
+                            <Image src={hm} alt="" />
                         </div>
-                        <p className='blog__date'>07.07.2025</p>
+                        <div className='blog__text'>
+                            <p className='blog__inf'>Как правильно освещать дом снаружи?</p>
+                            <p className='blog__data'>01.01.2024</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,4 +52,4 @@ function Blog() {
   )
 }
 
-export default Blog
+export default React.memo(Blog) 

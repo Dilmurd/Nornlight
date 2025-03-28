@@ -12,7 +12,7 @@ function Company() {
                 <div className="company__top">
                     <p>Почему NORNLIGHT?</p>
                     <Link href={"/about"}>
-                    <button>О компании <FaLongArrowAltRight/></button>
+                    <button className='btn'>О компании <FaLongArrowAltRight/></button>
                     </Link>
                 </div>
                 <div className="company__wrapper">
@@ -36,6 +36,9 @@ function Company() {
                         <p className='company__title'>Только проверенные бренды</p>
                         <p className='company__desc'>Бренды, проверенные временем и качеством</p>
                     </div>
+                    <Link href={"/about"} className='fat'>
+                      <button className='about'>О компании</button>
+                    </Link>
                 </div>
             </div>
         </section>
