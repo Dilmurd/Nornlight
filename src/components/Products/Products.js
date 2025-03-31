@@ -4,11 +4,13 @@ import { FaLongArrowAltRight, FaRegHeart } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import "./Products.scss";
 import Loading from "../Loading/Loading";
+import { useRouter } from "next/navigation";
 
 const Products = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const router = useRouter()
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -44,7 +46,7 @@ const Products = () => {
                         {products?.map((item) => (
                             <div key={item.id} className="products__item">
                                 <div className="products__img">
-                                    <img className="products__img" src={item.url} alt=""/>
+                                    <img onClick={() => router.push(`/products/${item.id}`)} className="products__img" src={item.url} alt=""/>
                                 </div>
                                 <div className="products__icon">
                                     <FaRegHeart />
